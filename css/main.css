@@ -1677,7 +1677,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #bf28b3;
+  background: #c68a85;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2518,4 +2518,11 @@ embed {
 }
 body {
   background: url("/images/cloud.png");
+}
+.site-author-image {
+  border-radius: 100%;
+  padding: 2px;
+  border: 2px dashed #fff;
+  animation: cycle 2s 0.5s forwards;
+  transition: border-radius 2s;
 }
