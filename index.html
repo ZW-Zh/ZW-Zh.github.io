@@ -70,7 +70,7 @@
   
     
     
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic|Fugaz One:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="//fonts.css.network/css?family=Lato:300,300italic,400,400italic,700,700italic|Fugaz One:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
   
 
 
@@ -361,68 +361,18 @@
 
       
         
-          
-            <p>#Matlab函数笔记</p>
-<ul>
+          <ul>
 <li><a href="#1">1.max()/min</a></li>
 <li><a href="#2">2.rand()/randi()/randn()</a></li>
 <li><a href="#3">3.length()/size()</a></li>
-<li><a href="#4">4.all()/any()</a></li>
-</ul>
-<h2 id="1">1.max()/min()</h2>
-
-<blockquote>
-<p>max() min()类似</p>
-</blockquote>
-<p>###(1)max(a)</p>
-<p>如果a是一个矩阵，比如a=[1,2,3;4,5,6]，max(a)的意思就是找出矩阵每列的最大值，<br>max(a)=[4,5,6]。</p>
-<p>###(2)max(a,b)<br>如果a和b都是大于1维的矩阵，那么要求a和b的行列的维数都要相等，函数的结果是比较a和b中每个元素的大小。</p>
-<p>比如：a=[1,2,3;4,5,6]b=[4,5,6;7,8,3]<br>max(a,b)=[4,5,6;7,8,6]。</p>
-<p>另外，如果a和b中至少有一个是常数，也是可以的。比如：<br>a=[1,2,3;4,5,6]b=3c=5<br>max(a,b)=[3,3,3;4,5,6]<br>max(b,c)=5。</p>
-<p>###(3)max(a,[],dim)<br>这个函数的意思是针对于2维矩阵的，<br>当dim=1时，比较的a矩阵的行，也就是和max（a）的效果是一样的；当dim=2时，比较的是a矩阵的列。</p>
-<p>举个例子：a=[1,2,3;4,5,6] </p>
-<p>max(a)=max(a,[],1)=[4,5,6] 比较的第一行和第二行的值，返回每一列最大元素</p>
-<p>max(a,[],2)=[3,6] 返回每一行最大元素</p>
-<p>###(4) [C,I]=max(a)<br>C表示的是矩阵a每列的最大值，I表示的是每个最大值对应的下标：<br>举例说明：</p>
-<p>a=[1,2,3;4,5,6][C,I]=max(a)</p>
-<p>C=[4,5,6]I=[2,2,2] 返回的是最大值对应的行号。</p>
-<p>###(5) [C,I]=max(a,[],dim)<br>同理：如果dim=1时，其结果和[c,i]=max(a)是一样的。<br>当dim=2时，同样上面的矩阵a。</p>
-<p>[c,i]=max(a,[],2)结果是：c=[3,6]i=[3,3]i返回的是矩阵a的列号。</p>
-<h2 id="2">2.rand()/randi()/randn()</h2>
-
-<p>###(1) rand() 生成均匀分布的伪随机数。分布在（0~1）之间<br>主要语法：</p>
-<p>#####rand(m,n) 生成m行n列的均匀分布的伪随机数</p>
-<p>#####rand(m,n,’double’)生成指定精度的均匀分布的伪随机数，参数还可以是’single’   </p>
-<p>#####rand(RandStream,m,n)利用指定的RandStream生成伪随机数</p>
-<p>###(2) randn() 生成标准正态分布的伪随机数（均值为0，方差为1）</p>
-<p>主要语法：同上</p>
-<p>###(3) randi() 生成均匀分布的伪随机整数<br> 主要语法：</p>
-<p>#####randi(iMax) 在开区间(0,iMax)生成均匀分布的伪随机整数</p>
-<p>#####randi(iMax,m,n) 在开区间(0,iMax)生成mXn型随机矩阵</p>
-<p>#####r = randi([iMin,iMax],m,n) 在开区间(iMin,iMax)生成m*n型随机矩阵</p>
-<h2 id="3">3. length()/size()</h2>
-
-<p>###length()</p>
-<p>length()是求某一矩阵所有维的最大长度，如果x是一维向量，那么length(x)就是求向量的长度。</p>
-<p>###size()</p>
-<p>#####(1)s=size(A)</p>
-<p>当只有一个输出参数时，返回一个行向量，该行向量的第一个元素是数组的行数，第二个元素是数组的列数。</p>
-<p>#####(2)[r,c]=size(A)<br>当有两个输出参数时，size函数将数组的行数返回到第一个输出变量，将数组的列数返回到第二个输出变量。</p>
-<p>其中r=size(A,1)该语句返回数组A的行数， c=size(A,2) 该语句返回数组A的列数。</p>
-<h2 id="4">4. all()/any()</h2>
-
-<p>###all()<br>检测矩阵中是否全为非零元素，如果是，则返回1，否则，返回0。</p>
-<p>####(1)B = all(A)：</p>
-<p>如果A是一个向量，如果所有的元素都是非零的，则返回1，如果有一个元素为零，则返回0。</p>
-<p>如果A是一个矩阵，则返回一个行向量，用于检测每一列是否全为非零元素，如果某一列中有一个元素为零，则返回0，如果某一列中全为非零元素，则返回1，由此构成一个行向量。</p>
-<p>####(2)B = all(A, 1)</p>
-<p>返回一个行向量，可以认为all(A, 1)等价于all(A)。</p>
-<p>####(3)B = all(A, 2)</p>
-<p>返回一个列向量，用于检测每一行是否全为非零元素，如果某一行中有一个元素为零，则返回0，如果某一行中全为非零元素，则返回1，由此构成一个列向量。</p>
-<p>####(4)all()函数中也可以放入一定的条件，如all(a&gt;0)</p>
-<p>###any()<br>检测矩阵中是否有非零元素，如果有，则返回1，否则，返回0。用法和all()一样</p>
-
-          
+<li><a href="#4">4.all()/any()</a>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/07/29/matlab函数笔记/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -551,6 +501,12 @@
     <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=386835&auto=0&height=66"></iframe>
 </div>
         
+        
+          <div class="cc-license motion-element" itemprop="license">
+            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" target="_blank">
+              <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons" />
+            </a>
+          </div>
         
 
         
