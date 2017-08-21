@@ -99,50 +99,23 @@
 
 
 
-<meta name="description" content="标号法求解过程(Ford-Fulkerson) 在数学建模书上看到关于最大流的问题，由于书上内容有些简略，一直不能理解。在网上查阅资料后，终于明白算法的原理。现在整理如下：  1.标号过程下面的算法中，每个顶点))的标号值有两个，第一个标号值为的前驱顶点，第二个标记值为,表示在可能的增广路上可以调整的流量。(1)首先给起点标号为(0,+∞）。成为已标号未检查的点。其余都是未标号的点。(2)若顶点已">
+<meta name="description" content="标号法求解过程(Ford-Fulkerson) 在数学建模书上看到关于最大流的问题，由于书上内容有些简略，一直不能理解。在网上查阅资料后，终于明白算法的原理。现在整理如下：  1.标号过程下面的算法中，每个顶点v_{x}的标号值有两个，第一个标号值为v_{x}的前驱顶点，第二个标记值为\delta_{x},表示在可能的增广路上可以调整的流量。(1)首先给起点v_{s}标号为(0,+∞）。v_{s}">
 <meta name="keywords" content="最大流问题,标号法">
 <meta property="og:type" content="article">
 <meta property="og:title" content="网络最大流问题标号法求解">
 <meta property="og:url" content="http://yoursite.com/2017/08/21/1/index.html">
 <meta property="og:site_name" content="ZevZhang&#39;s blog">
-<meta property="og:description" content="标号法求解过程(Ford-Fulkerson) 在数学建模书上看到关于最大流的问题，由于书上内容有些简略，一直不能理解。在网上查阅资料后，终于明白算法的原理。现在整理如下：  1.标号过程下面的算法中，每个顶点))的标号值有两个，第一个标号值为的前驱顶点，第二个标记值为,表示在可能的增广路上可以调整的流量。(1)首先给起点标号为(0,+∞）。成为已标号未检查的点。其余都是未标号的点。(2)若顶点已">
+<meta property="og:description" content="标号法求解过程(Ford-Fulkerson) 在数学建模书上看到关于最大流的问题，由于书上内容有些简略，一直不能理解。在网上查阅资料后，终于明白算法的原理。现在整理如下：  1.标号过程下面的算法中，每个顶点v_{x}的标号值有两个，第一个标号值为v_{x}的前驱顶点，第二个标记值为\delta_{x},表示在可能的增广路上可以调整的流量。(1)首先给起点v_{s}标号为(0,+∞）。v_{s}">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://latex.codecogs.com/png.latex? v_{x}">
-<meta property="og:image" content="http://latex.codecogs.com/png.latex?v_{x}">
-<meta property="og:image" content="http://latex.codecogs.com/png.latex?\delta_{x}">
-<meta property="og:image" content="http://latex.codecogs.com/png.latex?v_{s}">
-<meta property="og:image" content="http://latex.codecogs.com/png.latex?v_{s}">
-<meta property="og:image" content="http://latex.codecogs.com/png.latex?v_{x}">
-<meta property="og:image" content="http://latex.codecogs.com/png.latex?v_{x}">
-<meta property="og:image" content="http://latex.codecogs.com/png.latex?v_{y}">
-<meta property="og:image" content="http://latex.codecogs.com/png.latex?v_{x}">
-<meta property="og:image" content="http://latex.codecogs.com/png.latex?v_{y}">
-<meta property="og:image" content="http://latex.codecogs.com/png.latex?v_{x}">
-<meta property="og:image" content="http://latex.codecogs.com/png.latex?v_{y}">
-<meta property="og:image" content="http://latex.codecogs.com/png.latex?v_{y}">
-<meta property="og:image" content="http://latex.codecogs.com/png.latex?v_{x}">
-<meta property="og:image" content="http://latex.codecogs.com/png.latex?\delta_{y}">
-<meta property="og:image" content="http://latex.codecogs.com/png.latex?\delta_{y}=min{\left \{c_{xy}-f_{xy},\delta_{x}  \right \}}">
-<meta property="og:image" content="http://latex.codecogs.com/png.latex?v_{y}">
-<meta property="og:image" content="http://latex.codecogs.com/png.latex?v_{y}">
-<meta property="og:image" content="http://latex.codecogs.com/png.latex?v_{x}">
-<meta property="og:image" content="http://latex.codecogs.com/png.latex?v_{y}">
-<meta property="og:image" content="http://latex.codecogs.com/png.latex?-v_{x}">
-<meta property="og:image" content="http://latex.codecogs.com/png.latex?\delta_{y}">
-<meta property="og:image" content="http://latex.codecogs.com/png.latex?\delta_{y}=min{\left \{f_{xy},\delta_{x}  \right \}}">
-<meta property="og:image" content="http://latex.codecogs.com/png.latex?v_{y}">
-<meta property="og:image" content="http://latex.codecogs.com/png.latex?v_{x}">
-<meta property="og:image" content="http://latex.codecogs.com/png.latex?v_{t}">
-<meta property="og:image" content="http://latex.codecogs.com/png.latex?v_{t}">
-<meta property="og:image" content="http://latex.codecogs.com/png.latex?v_{s}">
-<meta property="og:image" content="http://latex.codecogs.com/png.latex?v_{t}">
-<meta property="og:image" content="http://latex.codecogs.com/png.latex?\delta_{t}">
-<meta property="og:image" content="http://latex.codecogs.com/png.latex?\delta_{t}">
-<meta property="og:updated_time" content="2017-08-21T12:31:01.000Z">
+<meta property="og:image" content="http://otnfw6f9i.bkt.clouddn.com/QQ20170821-231737@2x.png">
+<meta property="og:image" content="http://otnfw6f9i.bkt.clouddn.com/QQ20170821-232214@2x.png">
+<meta property="og:image" content="http://otnfw6f9i.bkt.clouddn.com/QQ20170821-232650@2x.png">
+<meta property="og:image" content="http://otnfw6f9i.bkt.clouddn.com/QQ20170821-233008@2x.png">
+<meta property="og:updated_time" content="2017-08-21T15:31:58.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="网络最大流问题标号法求解">
-<meta name="twitter:description" content="标号法求解过程(Ford-Fulkerson) 在数学建模书上看到关于最大流的问题，由于书上内容有些简略，一直不能理解。在网上查阅资料后，终于明白算法的原理。现在整理如下：  1.标号过程下面的算法中，每个顶点))的标号值有两个，第一个标号值为的前驱顶点，第二个标记值为,表示在可能的增广路上可以调整的流量。(1)首先给起点标号为(0,+∞）。成为已标号未检查的点。其余都是未标号的点。(2)若顶点已">
-<meta name="twitter:image" content="http://latex.codecogs.com/png.latex? v_{x}">
+<meta name="twitter:description" content="标号法求解过程(Ford-Fulkerson) 在数学建模书上看到关于最大流的问题，由于书上内容有些简略，一直不能理解。在网上查阅资料后，终于明白算法的原理。现在整理如下：  1.标号过程下面的算法中，每个顶点v_{x}的标号值有两个，第一个标号值为v_{x}的前驱顶点，第二个标记值为\delta_{x},表示在可能的增广路上可以调整的流量。(1)首先给起点v_{s}标号为(0,+∞）。v_{s}">
+<meta name="twitter:image" content="http://otnfw6f9i.bkt.clouddn.com/QQ20170821-231737@2x.png">
 
 
 
@@ -403,8 +376,9 @@
         <h1 id="标号法求解过程-Ford-Fulkerson"><a href="#标号法求解过程-Ford-Fulkerson" class="headerlink" title="标号法求解过程(Ford-Fulkerson)"></a>标号法求解过程(Ford-Fulkerson)</h1><blockquote>
 <p>在数学建模书上看到关于最大流的问题，由于书上内容有些简略，一直不能理解。在网上查阅资料后，终于明白算法的原理。现在整理如下：</p>
 </blockquote>
-<h2 id="1-标号过程"><a href="#1-标号过程" class="headerlink" title="1.标号过程"></a>1.标号过程</h2><p>下面的算法中，每个顶点)<img src="http://latex.codecogs.com/png.latex? v_{x}" alt="">)的标号值有两个，第一个标号值为<img src="http://latex.codecogs.com/png.latex?v_{x}" alt="">的前驱顶点，第二个标记值为<img src="http://latex.codecogs.com/png.latex?\delta_{x}" alt="">,表示在可能的增广路上可以调整的流量。<br><br><br>(1)首先给起点<img src="http://latex.codecogs.com/png.latex?v_{s}" alt="">标号为(0,+∞）。<img src="http://latex.codecogs.com/png.latex?v_{s}" alt="">成为已标号未检查的点。其余都是未标号的点。<br><br><br>(2)若顶点<img src="http://latex.codecogs.com/png.latex?v_{x}" alt="">已经标号，则对<img src="http://latex.codecogs.com/png.latex?v_{x}" alt="">的所有未标号的领接顶点<img src="http://latex.codecogs.com/png.latex?v_{y}" alt="vy">按以下规则标号：<br><br><br>取一个已标号未检查的点<img src="http://latex.codecogs.com/png.latex?v_{x}" alt="">，对一切未标号点<img src="http://latex.codecogs.com/png.latex?v_{y}" alt="">：若有非饱和弧(<img src="http://latex.codecogs.com/png.latex?v_{x}" alt="">,<img src="http://latex.codecogs.com/png.latex?v_{y}" alt="">)，则<img src="http://latex.codecogs.com/png.latex?v_{y}" alt="">标号(<img src="http://latex.codecogs.com/png.latex?v_{x}" alt="">,<img src="http://latex.codecogs.com/png.latex?\delta_{y}" alt="">)，<br>其中<img src="http://latex.codecogs.com/png.latex?\delta_{y}=min{\left \{c_{xy}-f_{xy},\delta_{x}  \right \}}" alt="">，<img src="http://latex.codecogs.com/png.latex?v_{y}" alt="">成为已标号未检查的点；若有非零弧(<img src="http://latex.codecogs.com/png.latex?v_{y}" alt="">,<img src="http://latex.codecogs.com/png.latex?v_{x}" alt="">)，则<img src="http://latex.codecogs.com/png.latex?v_{y}" alt="">标号(<img src="http://latex.codecogs.com/png.latex?-v_{x}" alt="">,<img src="http://latex.codecogs.com/png.latex?\delta_{y}" alt="">)，其中<img src="http://latex.codecogs.com/png.latex?\delta_{y}=min{\left \{f_{xy},\delta_{x}  \right \}}" alt="">，<img src="http://latex.codecogs.com/png.latex?v_{y}" alt="vy">成为已标号未检查的点。<img src="http://latex.codecogs.com/png.latex?v_{x}" alt="">成为已标号已检查的点。<br><br><br>(3)重复步骤(2)，直到<img src="http://latex.codecogs.com/png.latex?v_{t}" alt="">成为标号点或所有标号点都检查过。若<img src="http://latex.codecogs.com/png.latex?v_{t}" alt="">成为标号点，表明得到一条<img src="http://latex.codecogs.com/png.latex?v_{s}" alt="">到<img src="http://latex.codecogs.com/png.latex?v_{t}" alt="">的增广链，转入调整过程；若所有标号点都检查过，表明这时的可行流就是最大流，算法结束。</p>
-<h2 id="2-调整过程："><a href="#2-调整过程：" class="headerlink" title="2.调整过程："></a>2.调整过程：</h2><p>在增广链上，前向弧流量增加<img src="http://latex.codecogs.com/png.latex?\delta_{t}" alt="">，后向弧流量减少<img src="http://latex.codecogs.com/png.latex?\delta_{t}" alt="">。 </p>
+<h2 id="1-标号过程"><a href="#1-标号过程" class="headerlink" title="1.标号过程"></a>1.标号过程</h2><p>下面的算法中，每个顶点<script type="math/tex">v_{x}</script>的标号值有两个，第一个标号值为<script type="math/tex">v_{x}</script>的前驱顶点，第二个标记值为<script type="math/tex">\delta_{x}</script>,表示在可能的增广路上可以调整的流量。<br>(1)首先给起点<script type="math/tex">v_{s}</script>标号为(0,+∞）。<script type="math/tex">v_{s}</script>成为已标号未检查的点。其余都是未标号的点。<br>(2)若顶点<script type="math/tex">v_{x}</script>已经标号，则对<script type="math/tex">v_{x}</script>的所有未标号的领接顶点<script type="math/tex">v_{y}</script>按以下规则标号：<br>取一个已标号未检查的点<script type="math/tex">v_{x}</script>，对一切未标号点<script type="math/tex">v_{y}</script>：若有非饱和弧<script type="math/tex">(v_{x},v_{y})</script>，则<script type="math/tex">v_{y}</script>标号<script type="math/tex">(v_{x},\delta_{y})</script>，<br>其中<script type="math/tex">\delta_{y}=min{\left \{c_{xy}-f_{xy},\delta_{x}  \right \}}</script>，<script type="math/tex">v_{y}</script>成为已标号未检查的点；若有非零弧<script type="math/tex">(v_{y},v_{x})</script>，则<script type="math/tex">v_{y}</script>标号<script type="math/tex">(-v_{x},\delta_{y})</script>，其中<script type="math/tex">\delta_{y}=min{\left \{f_{xy},\delta_{x}  \right \}}</script>，<script type="math/tex">v_{y}</script>成为已标号未检查的点。<script type="math/tex">v_{x}</script>成为已标号已检查的点。<br>(3)重复步骤(2)，直到<script type="math/tex">v_{t}</script>成为标号点或所有标号点都检查过。若<script type="math/tex">v_{t}</script>成为标号点，表明得到一条<script type="math/tex">v_{s}</script>到<script type="math/tex">v_{t}</script>的增广链，转入调整过程；若所有标号点都检查过，表明这时的可行流就是最大流，算法结束。</p>
+<h2 id="2-调整过程："><a href="#2-调整过程：" class="headerlink" title="2.调整过程："></a>2.调整过程：</h2><p>在增广链上，前向弧流量增加<script type="math/tex">\delta_{t}</script>，后向弧流量减少<script type="math/tex">\delta_{t}</script>。 </p>
+<h1 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h1><p>如图，求s到t的最大流<br><img src="http://otnfw6f9i.bkt.clouddn.com/QQ20170821-231737@2x.png" alt=""><br>解法：<br>先寻找一条增广路，初始状态默认为零流<br><img src="http://otnfw6f9i.bkt.clouddn.com/QQ20170821-232214@2x.png" alt=""><br>如图是第一次标号过程，并进行增流。(括号左边数为容量，右边的数为流量）<br><img src="http://otnfw6f9i.bkt.clouddn.com/QQ20170821-232650@2x.png" alt=""><br>第二次标号过程<br><img src="http://otnfw6f9i.bkt.clouddn.com/QQ20170821-233008@2x.png" alt=""><br>第三次标号，此时<script type="math/tex">v_{t}</script>点不能再被标号，算法结束，求得最大流为14。</p>
 
       
     </div>
@@ -606,7 +580,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#标号法求解过程-Ford-Fulkerson"><span class="nav-number">1.</span> <span class="nav-text">标号法求解过程(Ford-Fulkerson)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-标号过程"><span class="nav-number">1.1.</span> <span class="nav-text">1.标号过程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-调整过程："><span class="nav-number">1.2.</span> <span class="nav-text">2.调整过程：</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#标号法求解过程-Ford-Fulkerson"><span class="nav-number">1.</span> <span class="nav-text">标号法求解过程(Ford-Fulkerson)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-标号过程"><span class="nav-number">1.1.</span> <span class="nav-text">1.标号过程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-调整过程："><span class="nav-number">1.2.</span> <span class="nav-text">2.调整过程：</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#例题"><span class="nav-number">2.</span> <span class="nav-text">例题</span></a></li></ol></div>
             
 
           </div>
@@ -789,6 +763,28 @@
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
 
   
 

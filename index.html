@@ -375,7 +375,7 @@
           标号法求解过程(Ford-Fulkerson)
 在数学建模书上看到关于最大流的问题，由于书上内容有些简略，一直不能理解。在网上查阅资料后，终于明白算法的原理。现在整理如下：
 
-1.标号过程下面的算法中，每个顶点))的标号值有两个，第一个标号值为的前驱顶点，第二个标记值为,表示在可能的增广路上可以调整
+1.标号过程下面的算法中，每个顶点v_{x}的标号值有两个，第一个标号值为v_{x}的前驱顶点，第二个标记值为\delta_
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -847,6 +847,28 @@
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
 
   
 
