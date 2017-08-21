@@ -99,22 +99,26 @@
 
 
 
-<meta name="description" content="标号法求解过程(Ford-Fulkerson) 在数学建模书上看到关于最大流的问题，由于书上内容有些简略，一直不能理解。在网上查阅资料后，终于明白算法的原理。现在整理如下：  1.标号过程下面的算法中，每个顶点的标号值有两个，第一个标号值为的前驱顶点，第二个标记值为 首先给起点标号为">
+<meta name="description" content="标号法求解过程(Ford-Fulkerson) 在数学建模书上看到关于最大流的问题，由于书上内容有些简略，一直不能理解。在网上查阅资料后，终于明白算法的原理。现在整理如下：  1.标号过程下面的算法中，每个顶点的标号值有两个，第一个标号值为的前驱顶点，第二个标记值为,表示在可能的增广路上可以调整的流量。(1)首先给起点标号为(0,+∞）。成为已标号未检查的点。其余都是未标号的点。(2)若顶点已经标">
 <meta name="keywords" content="最大流问题,标号法">
 <meta property="og:type" content="article">
 <meta property="og:title" content="网络最大流问题标号法求解">
 <meta property="og:url" content="http://yoursite.com/2017/08/21/1/index.html">
 <meta property="og:site_name" content="ZevZhang&#39;s blog">
-<meta property="og:description" content="标号法求解过程(Ford-Fulkerson) 在数学建模书上看到关于最大流的问题，由于书上内容有些简略，一直不能理解。在网上查阅资料后，终于明白算法的原理。现在整理如下：  1.标号过程下面的算法中，每个顶点的标号值有两个，第一个标号值为的前驱顶点，第二个标记值为 首先给起点标号为">
+<meta property="og:description" content="标号法求解过程(Ford-Fulkerson) 在数学建模书上看到关于最大流的问题，由于书上内容有些简略，一直不能理解。在网上查阅资料后，终于明白算法的原理。现在整理如下：  1.标号过程下面的算法中，每个顶点的标号值有两个，第一个标号值为的前驱顶点，第二个标记值为,表示在可能的增广路上可以调整的流量。(1)首先给起点标号为(0,+∞）。成为已标号未检查的点。其余都是未标号的点。(2)若顶点已经标">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://latex.codecogs.com/png.latex? v_{x}">
 <meta property="og:image" content="http://latex.codecogs.com/png.latex?v_{x}">
-<meta property="og:image" content="http://latex.codecogs.com/png.latex?{\delta}_{x}">
+<meta property="og:image" content="http://latex.codecogs.com/png.latex?\delta_{x}">
 <meta property="og:image" content="http://latex.codecogs.com/png.latex?v_{s}">
-<meta property="og:updated_time" content="2017-08-21T11:39:14.000Z">
+<meta property="og:image" content="http://latex.codecogs.com/png.latex?v_{s}">
+<meta property="og:image" content="http://latex.codecogs.com/png.latex?v_{x}">
+<meta property="og:image" content="http://latex.codecogs.com/png.latex?v_{x}">
+<meta property="og:image" content="http://latex.codecogs.com/png.latex?v_{y}">
+<meta property="og:updated_time" content="2017-08-21T11:54:55.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="网络最大流问题标号法求解">
-<meta name="twitter:description" content="标号法求解过程(Ford-Fulkerson) 在数学建模书上看到关于最大流的问题，由于书上内容有些简略，一直不能理解。在网上查阅资料后，终于明白算法的原理。现在整理如下：  1.标号过程下面的算法中，每个顶点的标号值有两个，第一个标号值为的前驱顶点，第二个标记值为 首先给起点标号为">
+<meta name="twitter:description" content="标号法求解过程(Ford-Fulkerson) 在数学建模书上看到关于最大流的问题，由于书上内容有些简略，一直不能理解。在网上查阅资料后，终于明白算法的原理。现在整理如下：  1.标号过程下面的算法中，每个顶点的标号值有两个，第一个标号值为的前驱顶点，第二个标记值为,表示在可能的增广路上可以调整的流量。(1)首先给起点标号为(0,+∞）。成为已标号未检查的点。其余都是未标号的点。(2)若顶点已经标">
 <meta name="twitter:image" content="http://latex.codecogs.com/png.latex? v_{x}">
 
 
@@ -376,8 +380,7 @@
         <h1 id="标号法求解过程-Ford-Fulkerson"><a href="#标号法求解过程-Ford-Fulkerson" class="headerlink" title="标号法求解过程(Ford-Fulkerson)"></a>标号法求解过程(Ford-Fulkerson)</h1><blockquote>
 <p>在数学建模书上看到关于最大流的问题，由于书上内容有些简略，一直不能理解。在网上查阅资料后，终于明白算法的原理。现在整理如下：</p>
 </blockquote>
-<h2 id="1-标号过程"><a href="#1-标号过程" class="headerlink" title="1.标号过程"></a>1.标号过程</h2><p>下面的算法中，每个顶点<img src="http://latex.codecogs.com/png.latex? v_{x}" alt="vx">的标号值有两个，第一个标号值为<img src="http://latex.codecogs.com/png.latex?v_{x}" alt="vx">的前驱顶点，第二个标记值为<img src="http://latex.codecogs.com/png.latex?{\delta}_{x}" alt=""></p>
-<p>首先给起点<img src="http://latex.codecogs.com/png.latex?v_{s}" alt="vs">标号为</p>
+<h2 id="1-标号过程"><a href="#1-标号过程" class="headerlink" title="1.标号过程"></a>1.标号过程</h2><p>下面的算法中，每个顶点<img src="http://latex.codecogs.com/png.latex? v_{x}" alt="vx">的标号值有两个，第一个标号值为<img src="http://latex.codecogs.com/png.latex?v_{x}" alt="vx">的前驱顶点，第二个标记值为<img src="http://latex.codecogs.com/png.latex?\delta_{x}" alt="">,表示在可能的增广路上可以调整的流量。<br><br><br>(1)首先给起点<img src="http://latex.codecogs.com/png.latex?v_{s}" alt="vs">标号为(0,+∞）。<img src="http://latex.codecogs.com/png.latex?v_{s}" alt="vs">成为已标号未检查的点。其余都是未标号的点。<br><br><br>(2)若顶点<img src="http://latex.codecogs.com/png.latex?v_{x}" alt="vx">已经标号，则对<img src="http://latex.codecogs.com/png.latex?v_{x}" alt="vx">的所有未标号的领接顶点<img src="http://latex.codecogs.com/png.latex?v_{y}" alt="vy">按一下规则标号：<br><br><br>1.</p>
 
       
     </div>
