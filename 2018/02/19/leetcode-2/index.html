@@ -105,18 +105,18 @@
 
 
 
-<meta name="description" content="leetcode 1 two sum给定一个数组和目标数，若数组中有两个数相加等于目标数，给出这两个数的下标方法暴力搜索最简单直观的方法，但是耗时长。 1234567891011121314151617181920class Solution &amp;#123;    public int[] twoSum(int[] nums, int target) &amp;#123;        boolean k=">
+<meta name="description" content="leetcode 2 Add Two Numbers给两个逆序的链表，将两链表的数相加，并以链表的形式输出思路一：将两链表的数取出赋给Integer对象相加，在转换成字符串反向输入新的链表。但是一旦链表过长Integer会溢出，leetcode也不支持BigInteger。代码如下：1234567891011121314151617181920212223242526272829303132333">
 <meta name="keywords" content="leetcode,算法">
 <meta property="og:type" content="article">
-<meta property="og:title" content="leetcode 1">
-<meta property="og:url" content="http://yoursite.com/2018/02/19/leetcode-1/index.html">
+<meta property="og:title" content="leetcode 2">
+<meta property="og:url" content="http://yoursite.com/2018/02/19/leetcode-2/index.html">
 <meta property="og:site_name" content="ZevZhang&#39;s blog">
-<meta property="og:description" content="leetcode 1 two sum给定一个数组和目标数，若数组中有两个数相加等于目标数，给出这两个数的下标方法暴力搜索最简单直观的方法，但是耗时长。 1234567891011121314151617181920class Solution &amp;#123;    public int[] twoSum(int[] nums, int target) &amp;#123;        boolean k=">
+<meta property="og:description" content="leetcode 2 Add Two Numbers给两个逆序的链表，将两链表的数相加，并以链表的形式输出思路一：将两链表的数取出赋给Integer对象相加，在转换成字符串反向输入新的链表。但是一旦链表过长Integer会溢出，leetcode也不支持BigInteger。代码如下：1234567891011121314151617181920212223242526272829303132333">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-02-19T14:09:11.000Z">
+<meta property="og:updated_time" content="2018-02-19T14:23:47.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="leetcode 1">
-<meta name="twitter:description" content="leetcode 1 two sum给定一个数组和目标数，若数组中有两个数相加等于目标数，给出这两个数的下标方法暴力搜索最简单直观的方法，但是耗时长。 1234567891011121314151617181920class Solution &amp;#123;    public int[] twoSum(int[] nums, int target) &amp;#123;        boolean k=">
+<meta name="twitter:title" content="leetcode 2">
+<meta name="twitter:description" content="leetcode 2 Add Two Numbers给两个逆序的链表，将两链表的数相加，并以链表的形式输出思路一：将两链表的数取出赋给Integer对象相加，在转换成字符串反向输入新的链表。但是一旦链表过长Integer会溢出，leetcode也不支持BigInteger。代码如下：1234567891011121314151617181920212223242526272829303132333">
 
 
 
@@ -144,13 +144,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/02/19/leetcode-1/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/02/19/leetcode-2/"/>
 
 
 
 
 
-  <title>leetcode 1 | ZevZhang's blog</title>
+  <title>leetcode 2 | ZevZhang's blog</title>
   
 
 
@@ -288,7 +288,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/19/leetcode-1/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/19/leetcode-2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ZevZhang">
@@ -305,7 +305,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">leetcode 1</h1>
+          <h1 class="post-title" itemprop="name headline">leetcode 2</h1>
         
 
         <div class="post-meta">
@@ -317,7 +317,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-19T16:19:56+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-19T22:09:34+08:00">
                 2018-02-19
               </time>
             
@@ -357,7 +357,7 @@
 
           
           
-             <span id="/2018/02/19/leetcode-1/" class="leancloud_visitors" data-flag-title="leetcode 1">
+             <span id="/2018/02/19/leetcode-2/" class="leancloud_visitors" data-flag-title="leetcode 2">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -385,11 +385,8 @@
       
 
       
-        <h1 id="leetcode-1-two-sum"><a href="#leetcode-1-two-sum" class="headerlink" title="leetcode 1 two sum"></a>leetcode 1 two sum</h1><h3 id="给定一个数组和目标数，若数组中有两个数相加等于目标数，给出这两个数的下标"><a href="#给定一个数组和目标数，若数组中有两个数相加等于目标数，给出这两个数的下标" class="headerlink" title="给定一个数组和目标数，若数组中有两个数相加等于目标数，给出这两个数的下标"></a>给定一个数组和目标数，若数组中有两个数相加等于目标数，给出这两个数的下标</h3><h3 id="方法暴力搜索"><a href="#方法暴力搜索" class="headerlink" title="方法暴力搜索"></a>方法暴力搜索</h3><p>最简单直观的方法，但是耗时长。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</div><div class="line">    <span class="keyword">public</span> <span class="keyword">int</span>[] twoSum(<span class="keyword">int</span>[] nums, <span class="keyword">int</span> target) &#123;</div><div class="line">        <span class="keyword">boolean</span> k=<span class="keyword">false</span>;</div><div class="line">        <span class="keyword">int</span>[] a=<span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">2</span>];</div><div class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;nums.length;i++)&#123;</div><div class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;nums.length;j++)&#123;</div><div class="line">                <span class="keyword">if</span>(nums[i]+nums[j]==target&amp;&amp;i!=j)&#123;</div><div class="line">                    a[<span class="number">0</span>]=i;</div><div class="line">                    a[<span class="number">1</span>]=j;</div><div class="line">                    k=<span class="keyword">true</span>;</div><div class="line">                    <span class="keyword">break</span>;</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">            <span class="keyword">if</span>(k)&#123;</div><div class="line">                <span class="keyword">break</span>;  </div><div class="line">            &#125;  </div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> a;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>使用map，将数组中的数加入map中，边加入，边判断目标数减加入的数是否在map中。大幅降低了时间复杂度。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</div><div class="line">    <span class="keyword">public</span> <span class="keyword">int</span>[] twoSum(<span class="keyword">int</span>[] nums, <span class="keyword">int</span> target) &#123;</div><div class="line">        <span class="keyword">int</span>[] result = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">2</span>];</div><div class="line">    Map&lt;Integer, Integer&gt; map = <span class="keyword">new</span> HashMap&lt;Integer, Integer&gt;();</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; nums.length; i++) &#123;</div><div class="line">        <span class="keyword">if</span> (map.containsKey(target - nums[i])) &#123;</div><div class="line">            result[<span class="number">1</span>] = i;</div><div class="line">            result[<span class="number">0</span>] = map.get(target - nums[i]);</div><div class="line">            <span class="keyword">return</span> result;</div><div class="line">        &#125;</div><div class="line">        map.put(nums[i], i);</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> result;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>也有先根据目标数大小，缩小数组中符合的数的范围，再进行搜索的方法，比较费脑子。</p>
+        <h1 id="leetcode-2-Add-Two-Numbers"><a href="#leetcode-2-Add-Two-Numbers" class="headerlink" title="leetcode 2 Add Two Numbers"></a>leetcode 2 Add Two Numbers</h1><h3 id="给两个逆序的链表，将两链表的数相加，并以链表的形式输出"><a href="#给两个逆序的链表，将两链表的数相加，并以链表的形式输出" class="headerlink" title="给两个逆序的链表，将两链表的数相加，并以链表的形式输出"></a>给两个逆序的链表，将两链表的数相加，并以链表的形式输出</h3><h3 id="思路一：将两链表的数取出赋给Integer对象相加，在转换成字符串反向输入新的链表。但是一旦链表过长Integer会溢出，leetcode也不支持BigInteger。代码如下："><a href="#思路一：将两链表的数取出赋给Integer对象相加，在转换成字符串反向输入新的链表。但是一旦链表过长Integer会溢出，leetcode也不支持BigInteger。代码如下：" class="headerlink" title="思路一：将两链表的数取出赋给Integer对象相加，在转换成字符串反向输入新的链表。但是一旦链表过长Integer会溢出，leetcode也不支持BigInteger。代码如下："></a>思路一：将两链表的数取出赋给Integer对象相加，在转换成字符串反向输入新的链表。但是一旦链表过长Integer会溢出，leetcode也不支持BigInteger。代码如下：</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/**</span></div><div class="line"> * Definition for singly-linked list.</div><div class="line"> * public class ListNode &#123;</div><div class="line"> *     int val;</div><div class="line"> *     ListNode next;</div><div class="line"> *     ListNode(int x) &#123; val = x; &#125;</div><div class="line"> * &#125;</div><div class="line"> */</div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</div><div class="line">    <span class="function"><span class="keyword">public</span> ListNode <span class="title">addTwoNumbers</span><span class="params">(ListNode l1, ListNode l2)</span> </span>&#123;</div><div class="line">        Integer b=getNumber(l1)+getNumber(l2);</div><div class="line">        String str = b.toString();</div><div class="line">        ListNode a=<span class="keyword">new</span> ListNode(str.charAt(str.length()-<span class="number">1</span>)- <span class="string">'0'</span>);</div><div class="line">        ListNode c=a;</div><div class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=str.length()-<span class="number">2</span>;i&gt;=<span class="number">0</span>;i--)&#123;</div><div class="line">            ListNode d=<span class="keyword">new</span> ListNode(str.charAt(i)-<span class="string">'0'</span>);</div><div class="line">            c.next=d;</div><div class="line">            c=d;</div><div class="line">        &#125;</div><div class="line">        c.next=<span class="keyword">null</span>;</div><div class="line">        <span class="keyword">return</span> a;</div><div class="line">    &#125;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getNumber</span><span class="params">(ListNode l)</span></span>&#123;</div><div class="line">        <span class="keyword">int</span> i=<span class="number">1</span>;</div><div class="line">        <span class="keyword">int</span> a=<span class="number">0</span>,c=<span class="number">1</span>;</div><div class="line">        <span class="keyword">while</span>(l!=<span class="keyword">null</span>)&#123;</div><div class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>;j&lt;i;j++)&#123;</div><div class="line">                c=c*<span class="number">10</span>;</div><div class="line">            &#125;</div><div class="line">            a+=l.val*c;</div><div class="line">            i++;</div><div class="line">            c=<span class="number">1</span>;</div><div class="line">            l=l.next;</div><div class="line">        &#125;;</div><div class="line">        <span class="keyword">return</span> a;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="思路二：两个链表同时遍历，将两个链表对应的结点的数相加，进位加入下次链表结点计算。当一个链表遍历完，另一链表还有结点时，将此链表结点的数置为0。若两个结点都遍历完，还有进位时，最后再加入一个值为1的结点。代码如下："><a href="#思路二：两个链表同时遍历，将两个链表对应的结点的数相加，进位加入下次链表结点计算。当一个链表遍历完，另一链表还有结点时，将此链表结点的数置为0。若两个结点都遍历完，还有进位时，最后再加入一个值为1的结点。代码如下：" class="headerlink" title="思路二：两个链表同时遍历，将两个链表对应的结点的数相加，进位加入下次链表结点计算。当一个链表遍历完，另一链表还有结点时，将此链表结点的数置为0。若两个结点都遍历完，还有进位时，最后再加入一个值为1的结点。代码如下："></a>思路二：两个链表同时遍历，将两个链表对应的结点的数相加，进位加入下次链表结点计算。当一个链表遍历完，另一链表还有结点时，将此链表结点的数置为0。若两个结点都遍历完，还有进位时，最后再加入一个值为1的结点。代码如下：</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/**</span></div><div class="line"> * Definition for singly-linked list.</div><div class="line"> * public class ListNode &#123;</div><div class="line"> *     int val;</div><div class="line"> *     ListNode next;</div><div class="line"> *     ListNode(int x) &#123; val = x; &#125;</div><div class="line"> * &#125;</div><div class="line"> */</div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</div><div class="line">    <span class="function"><span class="keyword">public</span> ListNode <span class="title">addTwoNumbers</span><span class="params">(ListNode l1, ListNode l2)</span> </span>&#123;</div><div class="line">        ListNode head =<span class="keyword">new</span> ListNode(<span class="number">0</span>);</div><div class="line">        ListNode c=head;</div><div class="line">        <span class="keyword">int</span> i=<span class="number">0</span>;</div><div class="line">        <span class="keyword">while</span>(l1!=<span class="keyword">null</span>||l2!=<span class="keyword">null</span>)&#123;</div><div class="line">            <span class="keyword">int</span> m=<span class="number">0</span>;</div><div class="line">            <span class="keyword">int</span> n=<span class="number">0</span>;</div><div class="line">            <span class="keyword">if</span>(l1!=<span class="keyword">null</span>)&#123;</div><div class="line">                m=l1.val;</div><div class="line">            &#125;</div><div class="line">            <span class="keyword">if</span>(l2!=<span class="keyword">null</span>)&#123;</div><div class="line">                n=l2.val;</div><div class="line">            &#125;</div><div class="line">            </div><div class="line">            Integer a=m+n+i;</div><div class="line">            <span class="keyword">if</span>(m+n+i&gt;<span class="number">9</span>)&#123;</div><div class="line">                String str = a.toString();</div><div class="line">                ListNode d=<span class="keyword">new</span> ListNode(str.charAt(str.length()-<span class="number">1</span>)-<span class="string">'0'</span>);</div><div class="line">                c.next=d;</div><div class="line">                i=<span class="number">1</span>;</div><div class="line">                c=d;</div><div class="line">            &#125;<span class="keyword">else</span>&#123;</div><div class="line">                ListNode d=<span class="keyword">new</span> ListNode(a);</div><div class="line">                c.next=d;</div><div class="line">                i=<span class="number">0</span>;</div><div class="line">                c=d;</div><div class="line">            &#125;</div><div class="line">                <span class="keyword">if</span>(l1!=<span class="keyword">null</span>)&#123;</div><div class="line">                l1=l1.next;</div><div class="line">            &#125;</div><div class="line">            <span class="keyword">if</span>(l2!=<span class="keyword">null</span>)&#123;</div><div class="line">                l2=l2.next;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">if</span>(i==<span class="number">1</span>)&#123;</div><div class="line">            ListNode d=<span class="keyword">new</span> ListNode(<span class="number">1</span>);</div><div class="line">                c.next=d;</div><div class="line">                i=<span class="number">0</span>;</div><div class="line">                c=d;</div><div class="line">        &#125;   </div><div class="line">        c.next=<span class="keyword">null</span>;</div><div class="line">        <span class="keyword">return</span> head.next;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -434,8 +431,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/11/19/2/" rel="next" title="解决mac上MySQL登录ERROR 1045 (28000) &#58 Access denied for user 'root'@'localhost' (using password &#58 YES)问题">
-                <i class="fa fa-chevron-left"></i> 解决mac上MySQL登录ERROR 1045 (28000) &#58 Access denied for user 'root'@'localhost' (using password &#58 YES)问题
+              <a href="/2018/02/19/leetcode-1/" rel="next" title="leetcode 1">
+                <i class="fa fa-chevron-left"></i> leetcode 1
               </a>
             
           </div>
@@ -443,10 +440,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/02/19/leetcode-2/" rel="prev" title="leetcode 2">
-                leetcode 2 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -595,7 +588,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#leetcode-1-two-sum"><span class="nav-number">1.</span> <span class="nav-text">leetcode 1 two sum</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#给定一个数组和目标数，若数组中有两个数相加等于目标数，给出这两个数的下标"><span class="nav-number">1.0.1.</span> <span class="nav-text">给定一个数组和目标数，若数组中有两个数相加等于目标数，给出这两个数的下标</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#方法暴力搜索"><span class="nav-number">1.0.2.</span> <span class="nav-text">方法暴力搜索</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#leetcode-2-Add-Two-Numbers"><span class="nav-number">1.</span> <span class="nav-text">leetcode 2 Add Two Numbers</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#给两个逆序的链表，将两链表的数相加，并以链表的形式输出"><span class="nav-number">1.0.1.</span> <span class="nav-text">给两个逆序的链表，将两链表的数相加，并以链表的形式输出</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#思路一：将两链表的数取出赋给Integer对象相加，在转换成字符串反向输入新的链表。但是一旦链表过长Integer会溢出，leetcode也不支持BigInteger。代码如下："><span class="nav-number">1.0.2.</span> <span class="nav-text">思路一：将两链表的数取出赋给Integer对象相加，在转换成字符串反向输入新的链表。但是一旦链表过长Integer会溢出，leetcode也不支持BigInteger。代码如下：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#思路二：两个链表同时遍历，将两个链表对应的结点的数相加，进位加入下次链表结点计算。当一个链表遍历完，另一链表还有结点时，将此链表结点的数置为0。若两个结点都遍历完，还有进位时，最后再加入一个值为1的结点。代码如下："><span class="nav-number">1.0.3.</span> <span class="nav-text">思路二：两个链表同时遍历，将两个链表对应的结点的数相加，进位加入下次链表结点计算。当一个链表遍历完，另一链表还有结点时，将此链表结点的数置为0。若两个结点都遍历完，还有进位时，最后再加入一个值为1的结点。代码如下：</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
