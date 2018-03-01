@@ -105,18 +105,18 @@
 
 
 
-<meta name="description" content="leetcode 7 Reverse Integer32位integer逆序输出思路：提取每一位上的数，个位乘1，十位乘10。。。累加到结果中。这一过程中也会有两个问题，第一个超出32位数的限制，如果超限，就会返回一个不相关的数。这时候就在循环的过程中判断提取结果是不是提取的数。不是就返回0。还有一个问题就是数累加的过程中改变了符号位。这个就在最后的时候判断结果和给的数是否异号，异号就返回0。代码">
+<meta name="description" content="leetcode 8 String to Integer (atoi)将数字字符串转换为数组思路：这题字符串形式有很多种，首先要忽略掉开始的空格，一直到遇到数字或正负号。如果出现连续正负号或者符号数字间夹杂空格直接返回0，超过int大小限制返回int最大值或最小值。代码思路：使用下标i遍历字符串，若字符不在’0’到’9’范围内跳出循环。每次循环结果为上一次循环结果乘10加上这一次循环的字符转为in">
 <meta name="keywords" content="leetcode,算法">
 <meta property="og:type" content="article">
-<meta property="og:title" content="leetcode 7">
-<meta property="og:url" content="http://yoursite.com/2018/02/28/leetcode-7/index.html">
+<meta property="og:title" content="leetcode 8">
+<meta property="og:url" content="http://yoursite.com/2018/03/01/leetcode-8/index.html">
 <meta property="og:site_name" content="ZevZhang&#39;s blog">
-<meta property="og:description" content="leetcode 7 Reverse Integer32位integer逆序输出思路：提取每一位上的数，个位乘1，十位乘10。。。累加到结果中。这一过程中也会有两个问题，第一个超出32位数的限制，如果超限，就会返回一个不相关的数。这时候就在循环的过程中判断提取结果是不是提取的数。不是就返回0。还有一个问题就是数累加的过程中改变了符号位。这个就在最后的时候判断结果和给的数是否异号，异号就返回0。代码">
+<meta property="og:description" content="leetcode 8 String to Integer (atoi)将数字字符串转换为数组思路：这题字符串形式有很多种，首先要忽略掉开始的空格，一直到遇到数字或正负号。如果出现连续正负号或者符号数字间夹杂空格直接返回0，超过int大小限制返回int最大值或最小值。代码思路：使用下标i遍历字符串，若字符不在’0’到’9’范围内跳出循环。每次循环结果为上一次循环结果乘10加上这一次循环的字符转为in">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-02-28T06:24:13.000Z">
+<meta property="og:updated_time" content="2018-03-01T13:15:26.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="leetcode 7">
-<meta name="twitter:description" content="leetcode 7 Reverse Integer32位integer逆序输出思路：提取每一位上的数，个位乘1，十位乘10。。。累加到结果中。这一过程中也会有两个问题，第一个超出32位数的限制，如果超限，就会返回一个不相关的数。这时候就在循环的过程中判断提取结果是不是提取的数。不是就返回0。还有一个问题就是数累加的过程中改变了符号位。这个就在最后的时候判断结果和给的数是否异号，异号就返回0。代码">
+<meta name="twitter:title" content="leetcode 8">
+<meta name="twitter:description" content="leetcode 8 String to Integer (atoi)将数字字符串转换为数组思路：这题字符串形式有很多种，首先要忽略掉开始的空格，一直到遇到数字或正负号。如果出现连续正负号或者符号数字间夹杂空格直接返回0，超过int大小限制返回int最大值或最小值。代码思路：使用下标i遍历字符串，若字符不在’0’到’9’范围内跳出循环。每次循环结果为上一次循环结果乘10加上这一次循环的字符转为in">
 
 
 
@@ -144,13 +144,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/02/28/leetcode-7/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/03/01/leetcode-8/"/>
 
 
 
 
 
-  <title>leetcode 7 | ZevZhang's blog</title>
+  <title>leetcode 8 | ZevZhang's blog</title>
   
 
 
@@ -288,7 +288,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/28/leetcode-7/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/01/leetcode-8/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ZevZhang">
@@ -305,7 +305,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">leetcode 7</h1>
+          <h1 class="post-title" itemprop="name headline">leetcode 8</h1>
         
 
         <div class="post-meta">
@@ -317,8 +317,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-28T14:07:22+08:00">
-                2018-02-28
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-01T20:46:48+08:00">
+                2018-03-01
               </time>
             
 
@@ -357,7 +357,7 @@
 
           
           
-             <span id="/2018/02/28/leetcode-7/" class="leancloud_visitors" data-flag-title="leetcode 7">
+             <span id="/2018/03/01/leetcode-8/" class="leancloud_visitors" data-flag-title="leetcode 8">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -385,7 +385,8 @@
       
 
       
-        <h1 id="leetcode-7-Reverse-Integer"><a href="#leetcode-7-Reverse-Integer" class="headerlink" title="leetcode 7 Reverse Integer"></a>leetcode 7 Reverse Integer</h1><h3 id="32位integer逆序输出"><a href="#32位integer逆序输出" class="headerlink" title="32位integer逆序输出"></a>32位integer逆序输出</h3><h3 id="思路：提取每一位上的数，个位乘1，十位乘10。。。累加到结果中。这一过程中也会有两个问题，第一个超出32位数的限制，如果超限，就会返回一个不相关的数。这时候就在循环的过程中判断提取结果是不是提取的数。不是就返回0。还有一个问题就是数累加的过程中改变了符号位。这个就在最后的时候判断结果和给的数是否异号，异号就返回0。代码如下："><a href="#思路：提取每一位上的数，个位乘1，十位乘10。。。累加到结果中。这一过程中也会有两个问题，第一个超出32位数的限制，如果超限，就会返回一个不相关的数。这时候就在循环的过程中判断提取结果是不是提取的数。不是就返回0。还有一个问题就是数累加的过程中改变了符号位。这个就在最后的时候判断结果和给的数是否异号，异号就返回0。代码如下：" class="headerlink" title="思路：提取每一位上的数，个位乘1，十位乘10。。。累加到结果中。这一过程中也会有两个问题，第一个超出32位数的限制，如果超限，就会返回一个不相关的数。这时候就在循环的过程中判断提取结果是不是提取的数。不是就返回0。还有一个问题就是数累加的过程中改变了符号位。这个就在最后的时候判断结果和给的数是否异号，异号就返回0。代码如下："></a>思路：提取每一位上的数，个位乘1，十位乘10。。。累加到结果中。这一过程中也会有两个问题，第一个超出32位数的限制，如果超限，就会返回一个不相关的数。这时候就在循环的过程中判断提取结果是不是提取的数。不是就返回0。还有一个问题就是数累加的过程中改变了符号位。这个就在最后的时候判断结果和给的数是否异号，异号就返回0。代码如下：</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">reverse</span><span class="params">(<span class="keyword">int</span> x)</span> </span>&#123;</div><div class="line">        <span class="keyword">int</span> a=<span class="number">0</span>;</div><div class="line">        <span class="keyword">int</span> len=String.valueOf(x).length();</div><div class="line">        <span class="keyword">int</span> c=<span class="number">1</span>;</div><div class="line">        <span class="keyword">int</span> b=x;</div><div class="line">        <span class="keyword">if</span>(x&lt;<span class="number">0</span>)&#123;</div><div class="line">            len-=<span class="number">1</span>;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;len-<span class="number">1</span>;i++)&#123;</div><div class="line">            c*=<span class="number">10</span>;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">while</span>(x!=<span class="number">0</span>)&#123;</div><div class="line">            a+=x%<span class="number">10</span>*c;</div><div class="line">            <span class="keyword">if</span>(x%<span class="number">10</span>*c/c!=x%<span class="number">10</span>)&#123;</div><div class="line">                <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">            &#125;</div><div class="line">            x=x/<span class="number">10</span>;</div><div class="line">            c=c/<span class="number">10</span>;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">if</span>(((b ^ a) &gt;&gt;&gt; <span class="number">31</span>)==<span class="number">1</span>)&#123;</div><div class="line">            <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> a;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+        <h1 id="leetcode-8-String-to-Integer-atoi"><a href="#leetcode-8-String-to-Integer-atoi" class="headerlink" title="leetcode 8 String to Integer (atoi)"></a>leetcode 8 String to Integer (atoi)</h1><h3 id="将数字字符串转换为数组"><a href="#将数字字符串转换为数组" class="headerlink" title="将数字字符串转换为数组"></a>将数字字符串转换为数组</h3><h3 id="思路：这题字符串形式有很多种，首先要忽略掉开始的空格，一直到遇到数字或正负号。如果出现连续正负号或者符号数字间夹杂空格直接返回0，超过int大小限制返回int最大值或最小值。"><a href="#思路：这题字符串形式有很多种，首先要忽略掉开始的空格，一直到遇到数字或正负号。如果出现连续正负号或者符号数字间夹杂空格直接返回0，超过int大小限制返回int最大值或最小值。" class="headerlink" title="思路：这题字符串形式有很多种，首先要忽略掉开始的空格，一直到遇到数字或正负号。如果出现连续正负号或者符号数字间夹杂空格直接返回0，超过int大小限制返回int最大值或最小值。"></a>思路：这题字符串形式有很多种，首先要忽略掉开始的空格，一直到遇到数字或正负号。如果出现连续正负号或者符号数字间夹杂空格直接返回0，超过int大小限制返回int最大值或最小值。</h3><h3 id="代码思路：使用下标i遍历字符串，若字符不在’0’到’9’范围内跳出循环。每次循环结果为上一次循环结果乘10加上这一次循环的字符转为int的值。若循环开始先判断是否循环结果大于int最大值除以10或者循环结果等于最大int值除以10且最后一位大于7，是的话说明这次循环的结果会超过最大或最小值限制。根据正负号来返回最大最小值。"><a href="#代码思路：使用下标i遍历字符串，若字符不在’0’到’9’范围内跳出循环。每次循环结果为上一次循环结果乘10加上这一次循环的字符转为int的值。若循环开始先判断是否循环结果大于int最大值除以10或者循环结果等于最大int值除以10且最后一位大于7，是的话说明这次循环的结果会超过最大或最小值限制。根据正负号来返回最大最小值。" class="headerlink" title="代码思路：使用下标i遍历字符串，若字符不在’0’到’9’范围内跳出循环。每次循环结果为上一次循环结果乘10加上这一次循环的字符转为int的值。若循环开始先判断是否循环结果大于int最大值除以10或者循环结果等于最大int值除以10且最后一位大于7，是的话说明这次循环的结果会超过最大或最小值限制。根据正负号来返回最大最小值。"></a>代码思路：使用下标i遍历字符串，若字符不在’0’到’9’范围内跳出循环。每次循环结果为上一次循环结果乘10加上这一次循环的字符转为int的值。若循环开始先判断是否循环结果大于int最大值除以10或者循环结果等于最大int值除以10且最后一位大于7，是的话说明这次循环的结果会超过最大或最小值限制。根据正负号来返回最大最小值。</h3><p>代码如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">myAtoi</span><span class="params">(String str)</span> </span>&#123;</div><div class="line">        <span class="keyword">int</span> sign=<span class="number">1</span>,i=<span class="number">0</span>;</div><div class="line">        <span class="keyword">int</span> len=str.length();</div><div class="line">        <span class="keyword">int</span> result=<span class="number">0</span>;</div><div class="line">        <span class="keyword">if</span>(str.equals(<span class="string">""</span>))&#123;<span class="keyword">return</span> <span class="number">0</span>;&#125;</div><div class="line">        <span class="keyword">while</span>(str.charAt(i)==<span class="string">' '</span>)&#123;i++;&#125;</div><div class="line">        <span class="keyword">if</span>(str.charAt(i)==<span class="string">'-'</span>||str.charAt(i)==<span class="string">'+'</span>)&#123;</div><div class="line">            sign=(str.charAt(i)==<span class="string">'-'</span>)?-<span class="number">1</span>:<span class="number">1</span>;</div><div class="line">            i++;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">while</span>(i&lt;len&amp;&amp;str.charAt(i)&gt;=<span class="string">'0'</span>&amp;&amp;str.charAt(i)&lt;=<span class="string">'9'</span>)&#123;</div><div class="line">            <span class="keyword">if</span>(result &gt; Integer.MAX_VALUE / <span class="number">10</span> || (result == Integer.MAX_VALUE / <span class="number">10</span> &amp;&amp; str.charAt(i) - <span class="string">'0'</span> &gt; <span class="number">7</span>))&#123;</div><div class="line">                <span class="keyword">return</span> (sign==<span class="number">1</span>)?Integer.MAX_VALUE:Integer.MIN_VALUE;</div><div class="line">            &#125;</div><div class="line">            result=result*<span class="number">10</span>+str.charAt(i)-<span class="string">'0'</span>;</div><div class="line">            i++;</div><div class="line">        &#125;</div><div class="line">        result*=sign;</div><div class="line">        <span class="keyword">return</span> result;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
       
     </div>
 
@@ -429,8 +430,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/02/27/leetcode-6/" rel="next" title="leetcode 6">
-                <i class="fa fa-chevron-left"></i> leetcode 6
+              <a href="/2018/02/28/leetcode-7/" rel="next" title="leetcode 7">
+                <i class="fa fa-chevron-left"></i> leetcode 7
               </a>
             
           </div>
@@ -438,10 +439,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/03/01/leetcode-8/" rel="prev" title="leetcode 8">
-                leetcode 8 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -590,7 +587,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#leetcode-7-Reverse-Integer"><span class="nav-number">1.</span> <span class="nav-text">leetcode 7 Reverse Integer</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#32位integer逆序输出"><span class="nav-number">1.0.1.</span> <span class="nav-text">32位integer逆序输出</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#思路：提取每一位上的数，个位乘1，十位乘10。。。累加到结果中。这一过程中也会有两个问题，第一个超出32位数的限制，如果超限，就会返回一个不相关的数。这时候就在循环的过程中判断提取结果是不是提取的数。不是就返回0。还有一个问题就是数累加的过程中改变了符号位。这个就在最后的时候判断结果和给的数是否异号，异号就返回0。代码如下："><span class="nav-number">1.0.2.</span> <span class="nav-text">思路：提取每一位上的数，个位乘1，十位乘10。。。累加到结果中。这一过程中也会有两个问题，第一个超出32位数的限制，如果超限，就会返回一个不相关的数。这时候就在循环的过程中判断提取结果是不是提取的数。不是就返回0。还有一个问题就是数累加的过程中改变了符号位。这个就在最后的时候判断结果和给的数是否异号，异号就返回0。代码如下：</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#leetcode-8-String-to-Integer-atoi"><span class="nav-number">1.</span> <span class="nav-text">leetcode 8 String to Integer (atoi)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#将数字字符串转换为数组"><span class="nav-number">1.0.1.</span> <span class="nav-text">将数字字符串转换为数组</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#思路：这题字符串形式有很多种，首先要忽略掉开始的空格，一直到遇到数字或正负号。如果出现连续正负号或者符号数字间夹杂空格直接返回0，超过int大小限制返回int最大值或最小值。"><span class="nav-number">1.0.2.</span> <span class="nav-text">思路：这题字符串形式有很多种，首先要忽略掉开始的空格，一直到遇到数字或正负号。如果出现连续正负号或者符号数字间夹杂空格直接返回0，超过int大小限制返回int最大值或最小值。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码思路：使用下标i遍历字符串，若字符不在’0’到’9’范围内跳出循环。每次循环结果为上一次循环结果乘10加上这一次循环的字符转为int的值。若循环开始先判断是否循环结果大于int最大值除以10或者循环结果等于最大int值除以10且最后一位大于7，是的话说明这次循环的结果会超过最大或最小值限制。根据正负号来返回最大最小值。"><span class="nav-number">1.0.3.</span> <span class="nav-text">代码思路：使用下标i遍历字符串，若字符不在’0’到’9’范围内跳出循环。每次循环结果为上一次循环结果乘10加上这一次循环的字符转为int的值。若循环开始先判断是否循环结果大于int最大值除以10或者循环结果等于最大int值除以10且最后一位大于7，是的话说明这次循环的结果会超过最大或最小值限制。根据正负号来返回最大最小值。</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
